@@ -1,0 +1,250 @@
+﻿/* NEED TO ADD ROOT HERE  */
+.icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+}
+
+/* ==========================================
+Single-colored icons can be modified like so:
+.icon-name {
+  font-size: 32px;
+  color: red;
+}
+========================================== */
+
+/*.col1,.col2,.col3 {
+    border: solid 1px red;
+}*/
+
+a {
+    font-family: 'Oswald', sans-serif;
+}
+.header img {
+    width: 175px;
+    display: block;
+    margin: 0 auto;
+    filter: invert(61%) sepia(37%) saturate(1288%) hue-rotate(221deg) brightness(87%) contrast(88%);
+}
+.left-header a {
+    color: #a0c293 !important;
+}
+
+.left-header, .right-header {
+    font-size: 22px;
+    font-family: 'Oswald', sans-serif;
+    padding: 70px 0;
+}
+
+.right-header a {
+    text-decoration:none;
+    background-color: #a0c293;
+    color: white;
+    padding:10px 20px;
+    font-size:22px;
+}
+
+/*END HEADER CODE*/
+
+/*BEGIN MAIN CODE*/
+
+/*BEGIN HERO SECTION CODE*/
+main {
+    /* CHANGE THIS AFTER THE REST OF THE PAGE IS DONE */
+    margin-top:100px;
+}
+/*.main img {
+    filter: invert(61%) sepia(37%) saturate(1288%) hue-rotate(221deg) brightness(87%) contrast(88%);
+}*/
+
+.main h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 75px;
+    color: #a0c293;
+}
+.hero-img-container img{
+    width: 655px;
+    height: 755px;
+}
+
+.bio-snippet p {
+    width: 25rem;
+    font-family: 'Roboto', sans-serif;
+     font-size:20px;
+}
+
+
+/*END HERO SECTION CODE*/
+
+/* BLURB CODE*/
+.blurb {
+    background-color: #a0c293;
+    margin-top: 100px;
+}
+
+.quote1 {
+    margin:0 auto;
+    /*border:1px solid red;*/
+    color: white;
+    font-size: 30px;
+    font-family: 'Oswald', sans-serif;
+    width:60rem;
+}
+
+.quote2 {
+    color: white;
+    font-size: 40px;
+    font-style: italic;
+    font-family: 'Roboto', sans-serif;
+}
+
+.quote3{
+    color: white;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+}
+
+/*END BLURB SECTION*/
+
+
+/* ABOUT ME SECTION*/
+.about-section {
+    margin-top: 100px;
+}
+
+.left-about .title {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 200px;
+    color: #a0c293;
+    transform: rotate(-90deg);
+    margin-top:200px;
+    margin-left:-100px;
+}
+
+.left-about .name {
+    font-family: 'Parisienne', cursive;
+    font-size: 175px;
+    margin-top: -200px;
+    transform: rotate(-90deg);
+}
+
+.middle-about h2 {
+    font-family: 'Oswald', sans-serif;
+    color:#967bb6;
+    font-size:40px;
+}
+.middle-about p {
+    padding-top: 25px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+.about-section a {
+    text-decoration: none;
+    background-color: #a0c293;
+    color: white;
+    padding: 10px 20px;
+    font-size: 22px;
+}
+/*END ABOUT ME SECTION*/
+
+/*SKILLS*/
+.skills-container {
+    background-color: #967bb6;
+    margin-top: 100px;
+    height:750px;
+    /*padding-bottom:250px;*/
+}
+.skills-imgs{
+    margin-top:150px;
+}
+.skills-imgs p {
+    font-family: 'Roboto', sans-serif;
+    color:white;
+    font-size:18px;
+}
+
+.img1, .img2, .img3 {
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+/*/*.img1-section, .img2-section, .img3-section {
+    border: 1px solid red;
+}*/
+
+.skills-right .title {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 200px;
+    color: white;
+    transform: rotate(90deg);
+    margin-top: 200px;
+    /*margin-left: -100px;*/
+}
+
+.skills-right .name {
+    font-family: 'Parisienne', cursive;
+    font-size: 50px;
+    margin-top: -200px;
+    transform: rotate(90deg);
+    margin-right:120px;
+}
+
+h3 {
+    margin-top:10px;
+    color: white;
+    background-color: black;
+    font-family: 'Oswald', sans-serif;
+    
+}
+
+.skills-container a {
+    text-decoration: none;
+    background-color: #a0c293;
+    color: white;
+    padding: 10px 20px;
+    font-size: 22px;
+    width:200px;
+}
+/*END SKILLS SECTION*/
+/*END MAIN CODE*/
+
+/*FOOTER*/
+footer img {
+    width: 175px;
+    display: block;
+    margin: 0 auto;
+    filter: invert(61%) sepia(37%) saturate(1288%) hue-rotate(221deg) brightness(87%) contrast(88%);
+}
+
+.left-footer, .left-footer a {
+    color: #967bb6
+}
+    .left-footer p, .right-footer p {
+        font-size: 30px;
+        color: #967bb6
+    }
+
+.right-footer a {
+    text-decoration: none;
+    background-color: #967bb6;
+    color: white;
+    padding: 10px 20px;
+    font-size: 22px;
+    margin-top:25px;
+}
+
+footer {
+    padding-bottom: 175px;
+    font-family: 'Oswald', sans-serif;
+    color: #967bb6;
+}
+
+.label-right {
+    margin-left:-315px;
+}
