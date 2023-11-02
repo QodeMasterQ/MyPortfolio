@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;700&family=Parisienne&family=Roboto:wght@300&display=swap"
         rel="stylesheet" />
@@ -20,34 +21,32 @@
     <script type="text/javascript"
         src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="Style.css" />
-    <title>My Portfolio</title>
+    <title>My Updated Portfolio</title>
 </head>
 
 <body>
     <!-- OPEN HEADER -->
     <header class="header" id="header">
-        <div class="container-fluid">
+        <div class="container container-fluid">
             <div class="row">
-                <div class="col-md-4 left-header">
+                <div class="col-md-4 header--nav--div">
                     <nav class="navbar navbar-expand-lg navbar-light">
 
-                        <button class="navbar-toggler mx-auto" type="button" data-toggle="collapse"
+                        <button class="navbar-toggler mx-auto toggled--menu--button" type="button" data-toggle="collapse"
                             data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                             aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                            <ul class="nav navbar-nav text-uppercase">
+                            <ul class="nav navbar-nav text-uppercase header--nav">
                                 <li class="nav-item"><a href="index.html" class="nav-link">home</a></li>
-                                <li class="nav-item"><a href="aboutMe.html" class="nav-link">about</a></li>
                                 <li class="nav-item"><a href="portfolio.html" class="nav-link">portfolio</a></li>
                             </ul>
                         </div>
                     </nav>
                 </div>
-
-                <div class="col-md-4 middle-header"><img src="./images/logo.png" alt="logo" /></div>
-                <div class="col-md-4 right-header text-center text-uppercase"><a href="#" class="btn">contact</a></div>
+                <div class="col-md-4 logo--div"><img class="img-fluid" src="./images/logo.png" alt="logo" /></div>
+                <div class="col-md-4 contact--button--div text-center text-uppercase"><a href="#" class="btn">connect with me</a></div>
             </div>
         </div>
     </header>
@@ -56,67 +55,76 @@
     <!--MAIN -->
     <main class="main" id="main">
         <!-- HERO SECTION -->
-        <div class="container-fluid">
+        <div class="container container-fluid hero--container">
             <div class="row">
-                <div class="col-md-6 hero-img-container">
-                    <img src="images/headshot1.jpeg" alt="Aquita's Headshot" class="img-fluid rounded float-end">
-                    <!-- <img src="https://via.placeholder.com/800x600" alt="Alternate Text"
-                        class="rounded mx-auto d-block img-fluid float-end" /> -->
+                <div class="col-md-6 hero--img--div">
+                    <img src="images/headshot1.jpeg" alt="Aquita's Headshot" class="img-fluid mx-auto d-block rounded hero--img">
                 </div>
-                <div class="col-md-6 bio-snippet">
-                    <h1>Creativity <br /> meets <br /> Technology</h1>
-                    <p class="text-wrap">As a developer, my superpower happens behind the scenes to make a great website
-                        look great, work fast and perform well with a seamless user experience.</p>
+                <div class="col-md-6 hero--snippet">
+                    <!-- <h1>Creativity <br /> meets <br /> Technology</h1> -->
+                    <h1>Creativity</h1><h1>meets</h1><h1>Technology</h1>
+                    <p class="text-wrap">As a developer, I wield my superpower behind the curtains, transforming websites into sleek, high-speed, and peak-performing platforms, ensuring a seamless user experience.</p>
 
                 </div>
             </div>
         </div>
         <!-- CLOSED HERO SECTION-->
 
-        <!-- BLURB -->
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col blurb">
-                    <p class="quote1 text-center">Twenty years from now you will be more disappointed by the things that
-                        you didn't do than by the one you did do. So throw off the bowlines. Sail away from the safe
-                        harbor. Catch the trade winds in your sails.</p>
-                    <p class="quote2 text-center">Explore. Dream. Discover.</p>
-                    <p class="quote3 text-center"> - Mark Twain</p>
+        <!-- QUOTE 1 -->
+        <div class="quote--container">
+            <div class="container quote--container--sub">
+                <div class="row">
+                    <div class="col quote1--div">
+                        <p class="quote--main--text text-center">Twenty years from now you will be more disappointed by the things that
+                            you didn't do than by the one you did do. So throw off the bowlines. Sail away from the safe
+                            harbor. Catch the trade winds in your sails.</p>
+                        <p class="quote--subtext text-center">Explore. Dream. Discover.</p>
+                        <p class="quote--author text-center"> - Mark Twain</p>
+                    </div>
                 </div>
             </div>
         </div>
-        <!-- CLOSED BLURB-->
+        <!-- CLOSED QUOTE 1-->
 
         <!--ABOUT ME-->
-        <div class="container-fluid">
+        <div class="about--me--container container container-fluid">
             <div class="row about-section">
-                <div class="col-md-2 left-about">
-                    <p class="text-uppercase title">about</p>
-                    <p class="text-capitalize name">aquita</p>
+                <div class="col-md-2 about--me--header">
+                    <p class="text-uppercase about--me--title">about</p>
+                    <!-- <p class="text-capitalize about--me--name">aquita</p> -->
                 </div>
-                <div class="col-md-6 middle-about">
+                <div class="col-md-6 about--me--content--div">
                     <h2>The creative thinking never ends...</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Lacus sed viverra tellus in hac. Dolor sit amet consectetur
-                        adipiscing. Cras pulvinar mattis nunc sed blandit libero volutpat sed cras. Vulputate enim nulla
-                        aliquet porttitor lacus luctus accumsan tortor. Non quam lacus suspendisse faucibus interdum
-                        posuere lorem. Vitae tempus quam pellentesque nec nam aliquam. Hendrerit gravida rutrum quisque
-                        non tellus. Sed turpis tincidunt id aliquet. Aliquam eleifend mi in nulla. </p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Lacus sed viverra tellus in hac. Dolor sit amet consectetur
-                        adipiscing. Cras pulvinar mattis nunc sed blandit libero volutpat sed cras. Vulputate enim nulla
-                        aliquet porttitor lacus luctus accumsan tortor. Non quam lacus suspendisse faucibus interdum
-                        posuere lorem. Vitae tempus quam pellentesque nec nam aliquam.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Lacus sed viverra tellus in hac. Dolor sit amet consectetur
-                        adipiscing. Cras pulvinar mattis nunc sed blandit libero volutpat sed cras. Vulputate enim nulla
-                        aliquet porttitor lacus luctus accumsan tortor. Non quam lacus suspendisse faucibus interdum
-                        posuere lorem.</p>
-                    <a href="#" class="btn text-uppercase">contact</a>
+                    <p>I am a passionate developer with a unique journey into the world of technology. My path may not have
+                        been traditional, but it's led me to a diverse set of experiences and skills that I'm excited to share
+                        with you.</p>
+                    <p>My educational journey started in college, but personal reasons led me to take a different route.
+                        I seized the opportunity to attend a coding academy, where I honed my skills in full stack development.
+                        This experience opened doors to a dynamic career in the tech world.</p>
+                    <p>For two years, I served as a Program Analyst at ERDC, where I delved into the intricacies 
+                        of problem-solving and data analysis. I then transitioned to the role of an instructor, sharing my knowledge 
+                        and expertise for a year. Currently, I'm working in state government as a developer, where I continue to 
+                        embrace the ever-evolving landscape of technology.</p>
+                        <p>Front-end development is where my heart lies. I take immense pleasure in creating user-friendly interfaces that 
+                            fulfill users' desires. But I'm equally proud of my ability to work behind the scenes, where I manipulate code 
+                            to make everything seamlessly function.
+                        My toolkit is diverse, and I'm skilled in Python, HTML, CSS, JavaScript, .NET, React, SQL, Node.js, Visual Basic, 
+                            and Swift. These versatile tools have allowed me to take on a wide range of projects and challenges.</p>
+                        <p>Beyond my professional life, I wear the hats of a loving mom to a lively toddler and a proud owner of a German 
+                            Shepherd. In my downtime, you'll find me indulging in my passions for crafting, baking delicious treats, and 
+                            immersing myself in the captivating world of Marvel.</p>
+                        <!-- <p>Technology is my canvas, and I paint with a palette of code and creativity. Join me on this exciting journey as 
+                            we explore the art of development and the boundless possibilities it offers.</p> -->
+                        <p>I'm excited to connect with you and collaborate on exciting projects, so please feel free to get in touch!</p>
+                        <div class="text-center button--div">
+                            <a href="#" class="btn text-uppercase">contact</a>
+                            <a href="#" class="btn text-uppercase">download resume</a>
+                            <a href="#" class="btn text-uppercase">portfolio</a>
+                        </div>
                 </div>
-                <div class="col-md-4 right-about">
+                <div class="col-md-4">
                     <div class="row">
-                        <img src="https://via.placeholder.com/300x338" alt="Alternate Text"
+                        <img src="images/thumbnail.jpg" alt="Alternate Text"
                             class="rounded mx-auto d-block img-fluid" />
                     </div>
                 </div>
@@ -125,39 +133,43 @@
         <!-- CLOSED ABOUT ME -->
 
         <!-- SKILLS -->
-        <div class="container-fluid skills-container">
-            <div class="row">
-                <div class="col-md-3 skills-imgs">
-                    <div class="img1-section">
-                        <img src="https://via.placeholder.com/350" alt="Alternate Text" class="img-fluid img1" />
-                        <h3 class="text-center text-uppercase">front-end design</h3>
-                        <p>Front-end design includes making sure that the user has a good experience by executing both a
-                            visual design and code.</p>
+        <div class="skills--container">
+            <div class="container container-fluid">
+                <div class="row">
+                    
+                        <div class="col-md-3 skills--imgs">
+                                <!-- <img src="https://via.placeholder.com/350" alt="Alternate Text" class="img-fluid img1" /> -->
+                                <!-- <p><i class="bi bi-pc-display-horizontal"></i></p> -->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" fill="currentColor" class="bi bi-pc-display-horizontal skills--svg" viewBox="0 0 16 16">
+                                    <path d="M1.5 0A1.5 1.5 0 0 0 0 1.5v7A1.5 1.5 0 0 0 1.5 10H6v1H1a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-5v-1h4.5A1.5 1.5 0 0 0 16 8.5v-7A1.5 1.5 0 0 0 14.5 0h-13Zm0 1h13a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .5-.5ZM12 12.5a.5.5 0 1 1 1 0 .5.5 0 0 1-1 0Zm2 0a.5.5 0 1 1 1 0 .5.5 0 0 1-1 0ZM1.5 12h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1ZM1 14.25a.25.25 0 0 1 .25-.25h5.5a.25.25 0 1 1 0 .5h-5.5a.25.25 0 0 1-.25-.25Z"/>
+                                  </svg>
+                                <h3 class="text-center text-uppercase">front-end design</h3>
+                                <p class="text-center">Front-end design includes making sure that the user has a good experience by executing both a
+                                visual design and code.</p>
+                        </div>
+                        <div class="col-md-3 skills--imgs">
+                                <!-- <img src="https://via.placeholder.com/350" alt="Alternate Text" class="img-fluid img2" /> -->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" fill="currentColor" class="bi bi-motherboard skills--svg" viewBox="0 0 16 16">
+                                    <path d="M11.5 2a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5Zm2 0a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5Zm-10 8a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1h-6Zm0 2a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1h-6ZM5 3a1 1 0 0 0-1 1h-.5a.5.5 0 0 0 0 1H4v1h-.5a.5.5 0 0 0 0 1H4a1 1 0 0 0 1 1v.5a.5.5 0 0 0 1 0V8h1v.5a.5.5 0 0 0 1 0V8a1 1 0 0 0 1-1h.5a.5.5 0 0 0 0-1H9V5h.5a.5.5 0 0 0 0-1H9a1 1 0 0 0-1-1v-.5a.5.5 0 0 0-1 0V3H6v-.5a.5.5 0 0 0-1 0V3Zm0 1h3v3H5V4Zm6.5 7a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-2Z"/>
+                                    <path d="M1 2a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-2H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 9H1V8H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6H1V5H.5a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 .5 2H1Zm1 11a1 1 0 0 0 1 1h11a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v11Z"/>
+                                  </svg>
+                                <h3 class="text-center text-uppercase">back-end development</h3>
+                                <p class="text-center">Back-end development includes building and maintaining the mechanisms that process data and
+                                perfrom actions on websites.</p>
+                        </div>
+                        <div class="col-md-3 skills--imgs">
+                                <!-- <img src="https://via.placeholder.com/350" alt="Alternate Text" class="img-fluid img3" /> -->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" fill="currentColor" class="bi bi-database skills--svg" viewBox="0 0 16 16">
+                                    <path d="M4.318 2.687C5.234 2.271 6.536 2 8 2s2.766.27 3.682.687C12.644 3.125 13 3.627 13 4c0 .374-.356.875-1.318 1.313C10.766 5.729 9.464 6 8 6s-2.766-.27-3.682-.687C3.356 4.875 3 4.373 3 4c0-.374.356-.875 1.318-1.313ZM13 5.698V7c0 .374-.356.875-1.318 1.313C10.766 8.729 9.464 9 8 9s-2.766-.27-3.682-.687C3.356 7.875 3 7.373 3 7V5.698c.271.202.58.378.904.525C4.978 6.711 6.427 7 8 7s3.022-.289 4.096-.777A4.92 4.92 0 0 0 13 5.698ZM14 4c0-1.007-.875-1.755-1.904-2.223C11.022 1.289 9.573 1 8 1s-3.022.289-4.096.777C2.875 2.245 2 2.993 2 4v9c0 1.007.875 1.755 1.904 2.223C4.978 15.71 6.427 16 8 16s3.022-.289 4.096-.777C13.125 14.755 14 14.007 14 13V4Zm-1 4.698V10c0 .374-.356.875-1.318 1.313C10.766 11.729 9.464 12 8 12s-2.766-.27-3.682-.687C3.356 10.875 3 10.373 3 10V8.698c.271.202.58.378.904.525C4.978 9.71 6.427 10 8 10s3.022-.289 4.096-.777A4.92 4.92 0 0 0 13 8.698Zm0 3V13c0 .374-.356.875-1.318 1.313C10.766 14.729 9.464 15 8 15s-2.766-.27-3.682-.687C3.356 13.875 3 13.373 3 13v-1.302c.271.202.58.378.904.525C4.978 12.71 6.427 13 8 13s3.022-.289 4.096-.777c.324-.147.633-.323.904-.525Z"/>
+                                  </svg>
+                                <h3 class="text-center text-uppercase">database management</h3>
+                                <p class="text-center">Database management is responsible for developing and maintaining an organizations's sytem
+                                    that store and organize data for companies.</p>
+                        </div>
+                    <div class="col-md-3 skills--header">
+                        <p class="text-uppercase skills--title">skills</p>
+                        <!-- <p class="text-capitalize skills--name text-nowrap">ways that i can help</p> -->
                     </div>
-                </div>
-                <div class="col-md-3 skills-imgs">
-                    <div class="img2-section">
-                        <img src="https://via.placeholder.com/350" alt="Alternate Text" class="img-fluid img2" />
-                        <h3 class="text-center text-uppercase">back-end development</h3>
-                        <p>Back-end development includes building and maintaining the mechanisms that process data and
-                            perfrom actions on websites.</p>
-                            <div class="row justify-content-center">
-            
-                                <a href="#" class="btn mx-auto text-uppercase">portfolio</a>
-                            </div>
-                    </div>
-                </div>
-                <div class="col-md-3 skills-imgs">
-                    <div class="img3-section">
-                        <img src="https://via.placeholder.com/350" alt="Alternate Text" class="img-fluid img3" />
-                        <h3 class="text-center text-uppercase">database management</h3>
-                        <p>Database management is responsible for developing and maintaining an organizations's sytem
-                            that store and organize data for companies.</p>
-                    </div>
-                </div>
-                <div class="col-md-3 skills-right">
-                    <p class="text-uppercase title">skills</p>
-                    <p class="text-capitalize name text-nowrap">ways that i can help</p>
                 </div>
             </div>
         </div>
@@ -166,91 +178,28 @@
     <!--CLOSED MAIN -->
 
     <!-- OPEN FOOTER -->
-        <footer class="footer" id="footer">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-4 left-footer">
-                        <img src="./images/logo.png" alt="logo" />
-                        <p class="text-uppercase text-center"> say hello:</p>
+    <footer class="footer" id="footer">
+        <div class="container container-fluid">
+            <div class="row">
+                <div class="col">
+                    <p class="text-uppercase text-center"> say hello:</p>
                         <ul class="nav justify-content-center">
-                            <li class="nav-item"><a class="nav-link" href="#"><svg class="icon icon-facebook">
-                                        <use xlink:href="#icon-facebook"></use>
-                                    </svg></a></li>
-                            <li class="nav-item"><a class="nav-link" href="#"><svg class="icon icon-instagram">
-                                        <use xlink:href="#icon-instagram"></use>
-                                    </svg></a></li>
-                            <li class="nav-item"><a class="nav-link" href="#"><svg class="icon icon-twitter">
-                                        <use xlink:href="#icon-twitter"></use>
-                                    </svg></a></li>
+                            <li class="nav-item"><a class="nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                                <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                              </svg></a></li>
+                            <li class="nav-item"><a class="nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                              </svg></a></li>
+                            <li class="nav-item"><a class="nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                              </svg></a></li>
                         </ul>
-
-                    </div>
-                    <div class="col-md-8 right-footer">
-                        <p>Let's work together!</p>
-                        <div class="row g-3 mx-auto">
-                            <div class="col-md-6">
-                                <label for="firstName" class="form-label">First Name:</label>
-                                <input type="text" class="form-control labelTrial" aria-label="First name"
-                                    id="firstName" style="width:300px;" required />
-                          </div>
-                          <div class=" col-md-6 label-right">
-                                <label for="lastName" class="form-label">Last Name:</label>
-                                <input type="text" class="form-control labelTrial" aria-label="First name" id="lastName"
-                                    style="width:300px;" required />
-                            </div>
-                            <div class="col-md-6">
-                                <label for="inputEmail4" class="form-label">Email:</label>
-                                <input type="email" class="form-control" id="inputEmail4" required
-                                    style="width:300px;" />
-                            </div>
-                            <div class="col-md-6 label-right">
-                                <label for="phoneNumber" class="form-label">Phone Number:</label>
-                                <input type="tel" class="form-control" id="phoneNumber"
-                                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" style="width:300px;" required />
-                            </div>
-                            <div class="col">
-                                <label for="message">Message:</label>
-                                <br />
-                                <input type="text" id="message" name="message"
-                                    placeholder="Be as detailed as possible..." style="width:600px; height:50px;" />
-                            </div>
-                        </div>
-                        <a href="#" class="btn text-uppercase">submit</a>
-                    </div>
                 </div>
             </div>
-        </footer>
-        <form id="form1" runat="server">
-            <div>
-            </div>
-        </form>
+        </div>
+    </footer>
         <!-- CLOSE FOOTER -->
 
-        <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1"
-            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-            <defs>
-                <symbol id="icon-facebook" viewBox="0 0 32 32">
-                    <path d="M19 6h5v-6h-5c-3.86 0-7 3.14-7 7v3h-4v6h4v16h6v-16h5l1-6h-6v-3c0-0.542 0.458-1 1-1z">
-                    </path>
-                </symbol>
-                <symbol id="icon-instagram" viewBox="0 0 32 32">
-                    <path
-                        d="M16 2.881c4.275 0 4.781 0.019 6.462 0.094 1.563 0.069 2.406 0.331 2.969 0.55 0.744 0.288 1.281 0.638 1.837 1.194 0.563 0.563 0.906 1.094 1.2 1.838 0.219 0.563 0.481 1.412 0.55 2.969 0.075 1.688 0.094 2.194 0.094 6.463s-0.019 4.781-0.094 6.463c-0.069 1.563-0.331 2.406-0.55 2.969-0.288 0.744-0.637 1.281-1.194 1.837-0.563 0.563-1.094 0.906-1.837 1.2-0.563 0.219-1.413 0.481-2.969 0.55-1.688 0.075-2.194 0.094-6.463 0.094s-4.781-0.019-6.463-0.094c-1.563-0.069-2.406-0.331-2.969-0.55-0.744-0.288-1.281-0.637-1.838-1.194-0.563-0.563-0.906-1.094-1.2-1.837-0.219-0.563-0.481-1.413-0.55-2.969-0.075-1.688-0.094-2.194-0.094-6.463s0.019-4.781 0.094-6.463c0.069-1.563 0.331-2.406 0.55-2.969 0.288-0.744 0.638-1.281 1.194-1.838 0.563-0.563 1.094-0.906 1.838-1.2 0.563-0.219 1.412-0.481 2.969-0.55 1.681-0.075 2.188-0.094 6.463-0.094zM16 0c-4.344 0-4.887 0.019-6.594 0.094-1.7 0.075-2.869 0.35-3.881 0.744-1.056 0.412-1.95 0.956-2.837 1.85-0.894 0.888-1.438 1.781-1.85 2.831-0.394 1.019-0.669 2.181-0.744 3.881-0.075 1.713-0.094 2.256-0.094 6.6s0.019 4.887 0.094 6.594c0.075 1.7 0.35 2.869 0.744 3.881 0.413 1.056 0.956 1.95 1.85 2.837 0.887 0.887 1.781 1.438 2.831 1.844 1.019 0.394 2.181 0.669 3.881 0.744 1.706 0.075 2.25 0.094 6.594 0.094s4.888-0.019 6.594-0.094c1.7-0.075 2.869-0.35 3.881-0.744 1.050-0.406 1.944-0.956 2.831-1.844s1.438-1.781 1.844-2.831c0.394-1.019 0.669-2.181 0.744-3.881 0.075-1.706 0.094-2.25 0.094-6.594s-0.019-4.887-0.094-6.594c-0.075-1.7-0.35-2.869-0.744-3.881-0.394-1.063-0.938-1.956-1.831-2.844-0.887-0.887-1.781-1.438-2.831-1.844-1.019-0.394-2.181-0.669-3.881-0.744-1.712-0.081-2.256-0.1-6.6-0.1v0z">
-                    </path>
-                    <path
-                        d="M16 7.781c-4.537 0-8.219 3.681-8.219 8.219s3.681 8.219 8.219 8.219 8.219-3.681 8.219-8.219c0-4.537-3.681-8.219-8.219-8.219zM16 21.331c-2.944 0-5.331-2.387-5.331-5.331s2.387-5.331 5.331-5.331c2.944 0 5.331 2.387 5.331 5.331s-2.387 5.331-5.331 5.331z">
-                    </path>
-                    <path
-                        d="M26.462 7.456c0 1.060-0.859 1.919-1.919 1.919s-1.919-0.859-1.919-1.919c0-1.060 0.859-1.919 1.919-1.919s1.919 0.859 1.919 1.919z">
-                    </path>
-                </symbol>
-                <symbol id="icon-twitter" viewBox="0 0 32 32">
-                    <path
-                        d="M32 7.075c-1.175 0.525-2.444 0.875-3.769 1.031 1.356-0.813 2.394-2.1 2.887-3.631-1.269 0.75-2.675 1.3-4.169 1.594-1.2-1.275-2.906-2.069-4.794-2.069-3.625 0-6.563 2.938-6.563 6.563 0 0.512 0.056 1.012 0.169 1.494-5.456-0.275-10.294-2.888-13.531-6.862-0.563 0.969-0.887 2.1-0.887 3.3 0 2.275 1.156 4.287 2.919 5.463-1.075-0.031-2.087-0.331-2.975-0.819 0 0.025 0 0.056 0 0.081 0 3.181 2.263 5.838 5.269 6.437-0.55 0.15-1.131 0.231-1.731 0.231-0.425 0-0.831-0.044-1.237-0.119 0.838 2.606 3.263 4.506 6.131 4.563-2.25 1.762-5.075 2.813-8.156 2.813-0.531 0-1.050-0.031-1.569-0.094 2.913 1.869 6.362 2.95 10.069 2.95 12.075 0 18.681-10.006 18.681-18.681 0-0.287-0.006-0.569-0.019-0.85 1.281-0.919 2.394-2.075 3.275-3.394z">
-                    </path>
-                </symbol>
-            </defs>
-        </svg>
 
 
 </body>

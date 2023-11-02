@@ -1,250 +1,266 @@
-﻿/* NEED TO ADD ROOT HERE  */
-.icon {
-    display: inline-block;
-    width: 1em;
-    height: 1em;
-    stroke-width: 0;
-    stroke: currentColor;
-    fill: currentColor;
+﻿
+/* OPEN ROOT */
+:root{
+    /* COLORS */
+    --primary-color:#a0c293;
+    --secondary-color:#967bb6;
+    --accent-color1:black;
+    --accent-color2:white;
+    /* FONTS */
+    --primary-font:'Oswald', sans-serif;
+    --secondary-font:'Roboto', sans-serif;
+    --special-font: 'Parisienne', cursive;
 }
+/* CLOSE ROOT */
 
-/* ==========================================
-Single-colored icons can be modified like so:
-.icon-name {
-  font-size: 32px;
-  color: red;
+/* OPEN GENERAL RULES */
+a, h1 {
+    font-family: var(--primary-font);
 }
-========================================== */
-
-/*.col1,.col2,.col3 {
-    border: solid 1px red;
-}*/
-
-a {
-    font-family: 'Oswald', sans-serif;
+.header a:hover{
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    color: var(--accent-color2) !important;
 }
-.header img {
-    width: 175px;
+/* CLOSE GENERAL RULES */
+
+/* OPEN HEADER RULES */
+header{
+    border-bottom: var(--primary-color) 6px solid;
+}
+.header--nav{
+    @media (max-width:991px) {
+        /* border: 2px solid red; */
+        text-align: center;
+    }
+}
+.header--nav--div a{
+    color: var(--primary-color) !important;
+    font-size: 25px;
+}
+.toggled--menu--button{
+    background-color: var(--primary-color);
+    width: 50px;
+    height: 50px;
+}
+.header--nav--div, .contact--button--div{
+    margin: 70px 0;
+}
+.logo--div img{
     display: block;
     margin: 0 auto;
     filter: invert(61%) sepia(37%) saturate(1288%) hue-rotate(221deg) brightness(87%) contrast(88%);
+    @media (min-width:991px) { 
+        width: 300px;
+    }
 }
-.left-header a {
-    color: #a0c293 !important;
-}
-
-.left-header, .right-header {
-    font-size: 22px;
-    font-family: 'Oswald', sans-serif;
-    padding: 70px 0;
-}
-
-.right-header a {
-    text-decoration:none;
-    background-color: #a0c293;
-    color: white;
+.contact--button--div a{
+    font-size: 25px;
+    background-color: var(--primary-color);
+    color: var(--accent-color2);
     padding:10px 20px;
-    font-size:22px;
+
+    @media (max-width:991px) {
+        width: 80%;
+    }
 }
 
-/*END HEADER CODE*/
-
-/*BEGIN MAIN CODE*/
-
-/*BEGIN HERO SECTION CODE*/
-main {
-    /* CHANGE THIS AFTER THE REST OF THE PAGE IS DONE */
-    margin-top:100px;
+/* CLOSE HEADER */
+/* OPEN MAIN */
+/* OPEN HERO SECTION */
+.main{
+    margin-top:25px;
 }
-/*.main img {
-    filter: invert(61%) sepia(37%) saturate(1288%) hue-rotate(221deg) brightness(87%) contrast(88%);
-}*/
-
-.main h1 {
-    font-family: 'Oswald', sans-serif;
+.hero--img{
+    width: 518px;
+}
+.main h1{
     font-size: 75px;
-    color: #a0c293;
+    color: var(--primary-color);
 }
-.hero-img-container img{
-    width: 655px;
-    height: 755px;
+.hero--snippet{
+    font-family: var(--secondary-font);
+    font-size: 22px;
 }
-
-.bio-snippet p {
-    width: 25rem;
-    font-family: 'Roboto', sans-serif;
-     font-size:20px;
+/* CLOSE HERO SECTION */
+/* OPEN QUOTE 1 */
+.quote--container{
+    background-color: var(--primary-color);
+    color: var(--accent-color2);
+    margin-top:25px;
 }
-
-
-/*END HERO SECTION CODE*/
-
-/* BLURB CODE*/
-.blurb {
-    background-color: #a0c293;
-    margin-top: 100px;
-}
-
-.quote1 {
-    margin:0 auto;
-    /*border:1px solid red;*/
-    color: white;
+.quote--main--text{
+    margin: 0 auto;
     font-size: 30px;
-    font-family: 'Oswald', sans-serif;
-    width:60rem;
+    font-family: var(--primary-font);
+    width: 85%;
 }
-
-.quote2 {
-    color: white;
+.quote--subtext{
     font-size: 40px;
     font-style: italic;
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--secondary-font);
 }
-
-.quote3{
-    color: white;
-    font-size: 20px;
-    font-family: 'Oswald', sans-serif;
+.quote--author{
+    font-size: 22px;
+    font-family: var(--primary-font);
 }
-
-/*END BLURB SECTION*/
-
-
-/* ABOUT ME SECTION*/
-.about-section {
-    margin-top: 100px;
+/* CLOSE QUOTE 1 */
+/* OPEN ABOUT ME */
+.about--me--container{
+    margin-top: 25px;
 }
-
-.left-about .title {
-    font-family: 'Oswald', sans-serif;
+.about--me--title{
+    font-family: var(--primary-font);
     font-weight: 700;
     font-size: 200px;
-    color: #a0c293;
+    color: var(--primary-color);
     transform: rotate(-90deg);
-    margin-top:200px;
-    margin-left:-100px;
+    margin-top: 290px;
+    /* THIS IS FOR MOBILE SIZE */
+    @media (max-width:991px) { 
+        transform: rotate(0deg);
+        font-size: 100px;
+        margin: 0;
+        text-align: center;
+    }
 }
-
-.left-about .name {
-    font-family: 'Parisienne', cursive;
-    font-size: 175px;
-    margin-top: -200px;
+.about--me--name{
+    font-family: var(--special-font);
+    font-size: 125px;
+    margin-top: -295px;
+    margin-left: 80px;
     transform: rotate(-90deg);
+    @media (max-width:991px) { 
+        transform: rotate(0deg);
+        font-size: 63px;
+        margin-top: -100px;
+        margin-left: 150px;
+    }
 }
+.about--me--content--div h2{
+    font-family: var(--primary-font);
+    color: var(--secondary-color);
+    font-size: 40px;
 
-.middle-about h2 {
-    font-family: 'Oswald', sans-serif;
-    color:#967bb6;
-    font-size:40px;
 }
-.middle-about p {
-    padding-top: 25px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-}
-.about-section a {
-    text-decoration: none;
-    background-color: #a0c293;
-    color: white;
+.about--me--content--div a{
+    background-color: var(--primary-color);
+    color: var(--accent-color2);
     padding: 10px 20px;
     font-size: 22px;
+    @media (max-width:991px) { 
+        margin-bottom: 10px;
+        width: 80%;
+    
+    }
 }
-/*END ABOUT ME SECTION*/
+/* CLOSE ABOUT ME  */
+/* OPEN SKILLS CONTAINER */
+.skills--container{
+    margin-top: 25px;
+    background-color: var(--secondary-color);
+    padding: 25px 0 80px 0;
+    /* padding-top: 25px; */
+}
+.skills--svg{
+    color: var(--accent-color2);
+    display: block;
+    margin: 0 auto;
+}
+.skills--imgs{
+    padding: 90px 10px 90px 0;
+    @media (max-width:991px) { 
+        padding: 0;
+        margin-top: 15px;
+    }
+}
 
-/*SKILLS*/
-.skills-container {
-    background-color: #967bb6;
-    margin-top: 100px;
-    height:750px;
-    /*padding-bottom:250px;*/
+.skills--imgs h3{
+    color: var(--accent-color2);
+    background-color: var(--accent-color1);
+    font-family: var(--primary-font);
+    margin-top: 10px;
 }
-.skills-imgs{
-    margin-top:150px;
-}
-.skills-imgs p {
-    font-family: 'Roboto', sans-serif;
-    color:white;
+.skills--imgs p{
+    font-family: var(--secondary-font);
+    color: var(--accent-color2);
     font-size:18px;
 }
 
-.img1, .img2, .img3 {
-    border-radius: 50%;
-    display: block;
-    margin: 0 auto;
-}
-
-/*/*.img1-section, .img2-section, .img3-section {
-    border: 1px solid red;
-}*/
-
-.skills-right .title {
-    font-family: 'Oswald', sans-serif;
+.skills--title {
+    font-family: var(--primary-font);
     font-weight: 700;
     font-size: 200px;
-    color: white;
+    color: var(--accent-color2);
     transform: rotate(90deg);
-    margin-top: 200px;
-    /*margin-left: -100px;*/
+    @media (max-width:991px) { 
+        transform: rotate(0deg);
+        font-size: 100px;
+        /* margin: 0; */
+        text-align: center;
+    }
 }
 
-.skills-right .name {
-    font-family: 'Parisienne', cursive;
+.skills--name{
+    font-family: var(--special-font);
     font-size: 50px;
-    margin-top: -200px;
     transform: rotate(90deg);
-    margin-right:120px;
+    margin-top: -295px;
+    font-weight: bold;
+    margin-right: 175px;
+    @media (max-width:991px) { 
+        transform: rotate(0deg);
+        font-size: 25px;
+        margin-top: -100px;
+        text-align: center;
+        /* margin-left: 150px; */
+    }
 }
-
-h3 {
-    margin-top:10px;
-    color: white;
-    background-color: black;
-    font-family: 'Oswald', sans-serif;
-    
-}
-
-.skills-container a {
-    text-decoration: none;
-    background-color: #a0c293;
-    color: white;
+.portfolio--button {
+    background-color: var(--primary-color);
+    color: var(--accent-color2);
     padding: 10px 20px;
     font-size: 22px;
     width:200px;
 }
-/*END SKILLS SECTION*/
-/*END MAIN CODE*/
+/* CLOSE SKILLS CONTAINER */
 
-/*FOOTER*/
-footer img {
-    width: 175px;
-    display: block;
-    margin: 0 auto;
-    filter: invert(61%) sepia(37%) saturate(1288%) hue-rotate(221deg) brightness(87%) contrast(88%);
-}
+/* PORTFOLIO */
+.card {
+    @media (max-width:991px) { 
+        /* padding: 0; */
+        margin: 15px auto 0;
 
-.left-footer, .left-footer a {
-    color: #967bb6
-}
-    .left-footer p, .right-footer p {
-        font-size: 30px;
-        color: #967bb6
     }
+}
 
-.right-footer a {
-    text-decoration: none;
-    background-color: #967bb6;
-    color: white;
-    padding: 10px 20px;
+.portfolio--header--container p{
+    font-family: var(--secondary-font);
     font-size: 22px;
-    margin-top:25px;
+    /* border: 2px solid red; */
+}
+.portfolio--container--card{
+    margin-top: 15px;
+}
+h5{
+    color: var(--secondary-color);
 }
 
-footer {
-    padding-bottom: 175px;
-    font-family: 'Oswald', sans-serif;
-    color: #967bb6;
+.portfolio--container a{
+    background-color: var(--secondary-color);
+    border: none;
+}
+.portfolio--container a:hover{
+    background-color: var(--primary-color);
+}
+/* CLOSE PORTFOLIO */
+/* FOOTER */
+.footer p{
+    color: var(--primary-color);
+    font-size: 24px;
 }
 
-.label-right {
-    margin-left:-315px;
+.footer a{
+    color: var(--secondary-color);
 }
+/* CLOSE FOOTER */
