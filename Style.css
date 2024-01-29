@@ -253,6 +253,10 @@ h5{
 .portfolio--container a:hover{
     background-color: var(--primary-color);
 }
+
+.portfolio--container img {
+    height: 325px;
+}
 /* CLOSE PORTFOLIO */
 /* FOOTER */
 .footer p{
