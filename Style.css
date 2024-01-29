@@ -257,6 +257,10 @@ h5{
 .portfolio--container img {
     height: 325px;
 }
+
+.portfolio--container p {
+    font-size: 12px;
+}
 /* CLOSE PORTFOLIO */
 /* FOOTER */
 .footer p{
